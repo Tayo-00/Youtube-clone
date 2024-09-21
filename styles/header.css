@@ -1,0 +1,162 @@
+.header{
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width:1px ;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(223, 223, 223);
+  z-index: 100;
+}
+
+.first-section{
+  align-items: center;
+  display: flex;
+  width: 175px;
+}
+
+.middle-section{
+  flex: 1;
+  margin-left: 65px;
+  margin-right: 35px;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.end-section{
+  flex-shrink: 0;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 7px;
+}
+.hamburger{
+  height: 26px;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+.logo{
+  height: 22.9px;
+}
+.search{
+ height: 44px;
+ width: 75px;
+ border: 1px solid rgb(248, 248, 248);
+ border-color: rgb(205, 205, 205);
+ margin-left: -1px;
+}
+
+.search,
+.voice,
+.upload-container,
+.apps-container,
+.notification-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .tooltip,
+.voice .tooltip,
+.upload-container .tooltip,
+.apps-container .tooltip,
+.notification-icon-container .tooltip{
+position: absolute;
+background-color: gray;
+color: white;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 8px;
+padding-right: 8px;
+border-radius: 2px;
+font-size: 12px;
+bottom: -33px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space: nowrap;
+}
+
+.search:hover .tooltip,
+.voice:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.search-icon{
+  height: 25px;
+  
+}
+.voice{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+
+.voice-icon{
+  margin-top: 3px;
+  height: 25px;
+}
+
+.textbox::placeholder{
+  font-size: 18px;
+}
+
+.textbox{
+  flex: 1;
+  padding-left: 11px;
+  height: 40px;
+  width:0;
+  border-style: solid;
+  border-color: rgb(218, 218, 218);
+  border-width: 1px;
+  font-size: 16px;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+.upload-icon{
+  height: 26px;
+}
+.apps-icon{
+  height: 26px;
+}
+.notifications-icon{
+  height: 26px;
+}
+.notification-icon-container{
+  position: relative;
+  margin-top: 8px;
+}
+.notifications-count{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: rgb(200, 17, 17);
+  color: white;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+.current-user-pic{
+  /* comment */
+  height: 35px;
+  border-radius: 16px;
+  margin-right: 20px;
+}
